@@ -4,3 +4,17 @@ server:
     key-store: file:///path/to/mykeys.jks
     key-store-password:
     key-password:
+
+logging:
+  file:
+    path: /logs/demo.log
+  level:
+    root: WARN
+#spring:
+#  datasource:
+#    hikari:
+#      jdbc-url: jdbc:mysql://localhost/readinglist
+#      username: user
+#      password: pwd
+#      # data-source-class-name: com.mysql.jdbc.Driver
+
