@@ -9,7 +9,7 @@ logging:
   file:
     path: /logs/demo.log
   level:
-    root: WARN
+    root: INFO
 #spring:
 #  datasource:
 #    hikari:

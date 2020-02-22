@@ -1,3 +1,3 @@
 #!/bin/bash
-./gradlew -q -b build.gradle bootRun 
+./gradlew -b build.gradle clean bootRun 
 
