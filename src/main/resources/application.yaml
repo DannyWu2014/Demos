@@ -1,2 +1,6 @@
 server:
   port: 8000
+  ssl:
+    key-store: file:///path/to/mykeys.jks
+    key-store-password:
+    key-password:
