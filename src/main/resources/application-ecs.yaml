@@ -1,9 +1,9 @@
 server:
   port: 80
-  ssl:
-    key-store: file:///path/to/mykeys.jks
-    key-store-password:
-    key-password:
+  #ssl:
+  #key-store: file:///path/to/mykeys.jks
+  #key-store-password:
+  #key-password:
 
 logging:
   file:
