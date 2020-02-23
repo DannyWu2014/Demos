@@ -24,7 +24,10 @@ public class HelloDocService {
 	}
 	
 	
-	public List<HelloDocument> findAll() {
-		return mongoTemplate.findAll(HelloDocument.class);
+	public void findAll() {
+		List<HelloDocument> docs = mongoTemplate.findAll(HelloDocument.class);
+		System.out.println("-----");
+		System.out.println(docs);
+		System.out.println("-----");
 	}
 }

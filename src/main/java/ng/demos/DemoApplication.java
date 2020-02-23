@@ -1,5 +1,6 @@
 package ng.demos;
 
+import ng.demos.mongo.HelloDocService;
 import ng.demos.redis.HelloRedisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -16,10 +17,15 @@ public class DemoApplication implements CommandLineRunner {
 	}
 	
 	@Autowired
-	public HelloRedisService helloRedisService;
+	private HelloRedisService helloRedisService;
+	
+	@Autowired
+	private HelloDocService helloDocService;
 	
 	@Override
 	public void run(String... args) throws Exception {
+		helloDocService.insert();
+		helloDocService.findAll();
 		helloRedisService.get();
 		helloRedisService.put();
 	}
