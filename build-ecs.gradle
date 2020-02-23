@@ -12,6 +12,7 @@ configurations {
     compileOnly {
         extendsFrom annotationProcessor
     }
+    compile.exclude module: "lettuce"
 }
 
 repositories {
@@ -33,8 +34,8 @@ dependencies {
     testImplementation('org.springframework.boot:spring-boot-starter-test') {
         exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
     }
+}
 
-    test {
-        useJUnitPlatform()
-    }
+test {
+    useJUnitPlatform()
 }
