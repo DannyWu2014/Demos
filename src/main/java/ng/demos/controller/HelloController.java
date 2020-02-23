@@ -1,17 +1,26 @@
 package ng.demos.controller;
 
-import lombok.extern.slf4j.Slf4j;
+import ng.demos.repository.HelloEntity;
+import ng.demos.repository.HelloJpaRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@Slf4j
+import java.util.List;
+
 @RestController
 public class HelloController {
 	
+	@Autowired
+	private HelloJpaRepository helloJpaRepository;
+	
 	@GetMapping("/hello")
 	public String hello() {
-		
-		log.warn("loging ..");
 		return "Hello, Spring.";
+	}
+	
+	@GetMapping("/hey")
+	public List<HelloEntity> hey() {
+		return helloJpaRepository.findAll();
 	}
 }

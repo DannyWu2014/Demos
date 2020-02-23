@@ -1,3 +1,4 @@
 #!/bin/bash
-./gradlew -b build.gradle clean bootRun 
+export SPRING_PROFILES_ACTIVE=default,data
+./gradlew -b build.gradle clean bootRun
 

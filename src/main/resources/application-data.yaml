@@ -1,0 +1,8 @@
+
+#spring:
+#  datasource:
+#    hikari:
+#      jdbc-url: jdbc:mysql://localhost/
+#      username: user
+#      password: pwd
+#      # data-source-class-name: com.mysql.jdbc.Driver

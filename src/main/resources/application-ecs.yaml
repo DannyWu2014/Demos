@@ -5,16 +5,9 @@ server:
   #key-store-password:
   #key-password:
 
-logging:
-  file:
-    path: /logs/demo.log
-  level:
-    root: INFO
-#spring:
-#  datasource:
-#    hikari:
-#      jdbc-url: jdbc:mysql://localhost/readinglist
-#      username: user
-#      password: pwd
-#      # data-source-class-name: com.mysql.jdbc.Driver
+#logging:
+#  file:
+#    path: /logs/demo.log
+#  level:
+#    root: INFO
 
